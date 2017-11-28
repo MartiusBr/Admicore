@@ -9,10 +9,6 @@ import javax.swing.JOptionPane;
 import conexion_db.BaseDatos;
 import pojos.Proveedor;
 
-/**
- *
- * @author Javier Arturo
- */
 public class ProveedorFrame extends javax.swing.JDialog {
 
     BaseDatos base = new BaseDatos();
@@ -149,6 +145,7 @@ public class ProveedorFrame extends javax.swing.JDialog {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        
         int clave = Integer.parseInt(campoClave.getText());
         String nombre = campoNombre.getText();
         String direccion = campoDireccion.getText();

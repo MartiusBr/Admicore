@@ -220,6 +220,11 @@ public class VentasFrame extends javax.swing.JInternalFrame {
 
         btnCorteDia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnCorteDia.setText("Corte del día");
+        btnCorteDia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCorteDiaActionPerformed(evt);
+            }
+        });
 
         btnQuitarProd.setPreferredSize(new java.awt.Dimension(88, 88));
         btnQuitarProd.setIcon(new ImageIcon(new ImageIcon("images/Quitar.png").getImage().getScaledInstance((int)(btnQuitarProd.getPreferredSize().getWidth()*0.7), (int)(btnQuitarProd.getPreferredSize().getHeight()*0.7), java.awt.Image.SCALE_DEFAULT)));
@@ -264,7 +269,7 @@ public class VentasFrame extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(campoBuscarProd, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE))
+                        .addComponent(jScrollPane2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -424,6 +429,10 @@ public class VentasFrame extends javax.swing.JInternalFrame {
             campoPagaCon.setText("");
         }
     }//GEN-LAST:event_btnRealizarVentaActionPerformed
+
+    private void btnCorteDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCorteDiaActionPerformed
+        
+    }//GEN-LAST:event_btnCorteDiaActionPerformed
 
     private void anadirProductoAVenta(Producto prod){
         String claveProd = prod.getIdProducto();
