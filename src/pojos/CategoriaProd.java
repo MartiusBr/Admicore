@@ -3,7 +3,7 @@ package pojos;
 public class CategoriaProd {
     
     private int idCategoriaProd;
-    private String nomCategoriaProd;
+    private double nomCategoriaProd;
     private String descCategoriaProd;
 
     public CategoriaProd(int idCategoriaProd, String nomCategoriaProd, String descCategoriaProd) {
